@@ -138,7 +138,7 @@ public class Main extends BaseActivity {
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         mainBind.mainRecycler.setLayoutManager(layoutManager);
 
-        adapter = LastAdapter.with(spotList, BR.item)
+        LastAdapter.with(spotList, BR.item)
                 .map(RecyclerHeader.class, R.layout.header_main_recycler)
                 .map(RecyclerProgress.class, R.layout.progress_main_recycler)
                 .map(Spot.class, R.layout.item_main_recycler)
